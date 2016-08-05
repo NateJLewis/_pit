@@ -1,0 +1,39 @@
+.sticky {
+
+}
+
+.hentry {
+
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+
+}
+
+.page-links {
+
+}
+
+.excerpt_more_link {
+    margin-left: 1rem;
+    font-size: 1rem
+}
+.excerpt_more_link .material-icons {
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+    font-size: 1rem;
+	margin-left: .25rem;
+}

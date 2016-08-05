@@ -1,0 +1,246 @@
+//
+// Contextual backgrounds
+//
+
+// Inverse
+// TODO: redo this as a proper class
+
+.form_cabinet {
+	margin-left: -2rem;
+	margin-right: -2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.form_cabinet,
+.form_cabinet .form_drawer,
+.site_branding_wrap {
+	background-color: darken($gray-base, 10%);
+}
+
+.site_branding_wrap,
+.site_navigaton_wrap,
+.bg-inverse {
+  color: $body-color-inverse;
+}
+
+.site_navigaton_wrap,
+.bg-inverse {
+  background-color: $gray-base;
+}
+.bg-faded {
+    background-color: lighten($gray-base, 5%) !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-black {
+    background-color: $black !important;
+}
+
+.bg-gray-base {
+    background-color: $gray-base !important;
+}
+
+.bg-gray-darker {
+    background-color: $gray-darker !important;
+}
+
+.bg-gray-dark {
+    background-color: $gray-dark !important;
+}
+
+.bg-gray {
+    background-color: $gray !important;
+}
+
+.bg-gray-light {
+    background-color: $gray-light !important;
+}
+
+.bg-gray-lighter {
+    background-color: $gray-lighter !important;
+}
+
+.bg-gray-lightest {
+    background-color: $gray-lightest !important;
+}
+.bg-offwhite {
+    background-color: $offwhite !important;
+}
+.bg-offwhite-light {
+    background-color: $offwhite-light !important;
+}
+.bg-offwhite-lighter  {
+    background-color: $offwhite-lighter !important;
+}
+
+.bg-brand-primary {
+    background-color: $brand-primary !important;
+}
+.bg-brand-teal-darkest {
+    background-color: $brand-teal-darkest !important;
+}
+.bg-brand-teal-dark {
+    background-color: $brand-teal-dark !important;
+}
+.bg-brand-teal-light {
+    background-color: $brand-teal-light !important;
+}
+.bg-brand-success {
+    background-color: $brand-success !important;
+}
+.bg-brand-info {
+    background-color: $brand-info !important;
+}
+.bg-brand-warning  {
+    background-color: $brand-warning !important;
+}
+.bg-brand-danger {
+    background-color: $brand-danger !important;
+}
+.bg-brand-orange {
+    background-color: $brand-orange !important;
+}
+.bg-brand-orange-dark {
+    background-color: $brand-orange-dark !important;
+}
+.bg-white {
+    background-color: $white !important;
+}
+.bg-brand-red {
+    background-color: $brand-red !important;
+}
+.bg-brand-red-dark {
+    background-color: $brand-red-dark !important;
+}
+
+// COLOR STLES
+.color-black {
+    color: $black !important;
+}
+
+.color-gray-base {
+    color: $gray-base !important;
+}
+
+.color-gray-darker {
+    color: $gray-darker !important;
+}
+
+.color-gray-dark {
+    color: $gray-dark !important;
+}
+
+.color-gray {
+    color: $gray !important;
+}
+
+.color-gray-light {
+    color: $gray-light !important;
+}
+
+.color-gray-lighter {
+    color: $gray-lighter !important;
+}
+
+.color-gray-lightest {
+    color: $gray-lightest !important;
+}
+.color-offwhite {
+    color: $offwhite !important;
+}
+.color-offwhite-light {
+    color: $offwhite-light !important;
+}
+.color-body-color-inverse,
+.color-offwhite-lighter {
+    color: $offwhite-lighter !important;
+}
+
+.color-brand-primary {
+    color: $brand-primary !important;
+}
+.color-brand-teal-darkest {
+    color: $brand-teal-darkest !important;
+}
+.color-brand-teal-dark {
+    color: $brand-teal-dark !important;
+}
+.color-brand-teal-light {
+    color: $brand-teal-light !important;
+}
+.color-brand-success {
+    color: $brand-success !important;
+}
+.color-brand-info {
+    color: $brand-info !important;
+}
+.color-brand-warning {
+    color: $brand-warning !important;
+}
+.color-brand-danger {
+    color: $brand-danger !important;
+}
+.color-brand-orange {
+    color: $brand-orange !important;
+}
+.color-brand-orange-dark {
+    color: $brand-orange-dark !important;
+}
+.color-brand-red {
+    color: $brand-red !important;
+}
+.color-brand-red-dark {
+    color: $brand-red-dark !important;
+}
+.color-white {
+    color: $white !important;
+}
+
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $brand-success);
+
+@include bg-variant('.bg-info', $brand-info);
+
+@include bg-variant('.bg-warning', $brand-warning);
+
+@include bg-variant('.bg-danger', $brand-danger);
+
+
+.shadow_2dp {
+    border-radius: 2px!important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow_3dp {
+    border-radius: 2px!important;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow_4dp {
+    border-radius: 2px!important;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_6dp {
+    border-radius: 2px!important;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_8dp {
+    border-radius: 2px!important;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_16dp {
+    border-radius: 2px!important;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_24dp {
+    border-radius: 2px!important;
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+}

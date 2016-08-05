@@ -1,0 +1,52 @@
+
+.card-block {
+	&.markdown_card_block {
+		h2 {
+    		font-size: 1.6rem;
+			margin-bottom: .75rem;
+			color: darken($body-color, 25%);
+		}
+		h3 {
+		    font-size: 1.35rem;
+			margin-bottom: .75rem;
+			color: darken($body-color, 25%);
+		}
+		h4 {
+		    font-size: 1.25rem;
+			margin-bottom: .75rem;
+			color: darken($body-color, 25%);
+		}
+		h5 {
+		    font-size: 1.15rem;
+			margin-bottom: .75rem;
+			color: darken($body-color, 25%);
+		}
+		h6 {
+		    font-size: 1.05rem;
+			margin-bottom: .75rem;
+			color: darken($body-color, 25%);
+		}
+		ol li {
+			font-size: .975rem;
+			color: darken($body-color, 15%);
+		}
+		ul li {
+			font-size: .975rem;
+			color: darken($body-color, 15%);
+		}
+		a {
+			font-size: .975rem;
+			color: darken($body-color, 15%);
+		}
+		p {
+			font-size: .975rem;
+			color: darken($body-color, 15%);
+		}
+		em {
+			color: darken($body-color, 10%);
+		}
+		strong {
+			color: darken($body-color, 30%);
+		}
+	}
+}

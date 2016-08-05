@@ -1,0 +1,792 @@
+.swatch {
+  margin-bottom: 0.5em;
+  display: block;
+}
+.swatch::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media (min-width: 30em) {
+  .swatch {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    width: 50%;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 49.1875em) {
+  .swatch {
+    width: 33.33333%;
+  }
+}
+
+.swatch__base {
+  height: 130px;
+  width: 100%;
+}
+
+.swatch__all-tones {
+  height: 70px;
+  width: 100%;
+}
+.swatch__all-tones::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.swatch__tone {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+@media (min-width: 30em) {
+  .swatch__tone {
+    width: 33.33333%;
+  }
+}
+
+.swatch._primary .swatch__base {
+  background-color: #b0cb1f;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.728rem;
+  text-transform: uppercase;
+}
+.swatch._primary .swatch__base::after {
+  font-size: 1.2rem;
+}
+.swatch._primary .swatch__base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "green";
+}
+.swatch._primary .swatch__base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#b0cb1f";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-lightest {
+  background-color: #dfeaa5;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-lightest::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-lightest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lightest";
+}
+.swatch._primary ._tone-lightest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#dfeaa5";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-lighter {
+  background-color: #d0e079;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-lighter::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-lighter::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lighter";
+}
+.swatch._primary ._tone-lighter::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#d0e079";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-light {
+  background-color: #c0d54c;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-light::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-light::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "light";
+}
+.swatch._primary ._tone-light::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#c0d54c";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-base {
+  background-color: #b0cb1f;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-base::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "base";
+}
+.swatch._primary ._tone-base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#b0cb1f";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-dark {
+  background-color: #8da219;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-dark::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-dark::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "dark";
+}
+.swatch._primary ._tone-dark::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#8da219";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-darker {
+  background-color: #6a7a13;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-darker::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-darker::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darker";
+}
+.swatch._primary ._tone-darker::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#6a7a13";
+  text-transform: uppercase;
+}
+.swatch._primary ._tone-darkest {
+  background-color: #46510c;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._primary ._tone-darkest::after {
+  font-size: 0.83333rem;
+}
+.swatch._primary ._tone-darkest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darkest";
+}
+.swatch._primary ._tone-darkest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#46510c";
+  text-transform: uppercase;
+}
+
+.swatch._secondary .swatch__base {
+  background-color: #86776f;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.728rem;
+  text-transform: uppercase;
+}
+.swatch._secondary .swatch__base::after {
+  font-size: 1.2rem;
+}
+.swatch._secondary .swatch__base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "brown";
+}
+.swatch._secondary .swatch__base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#86776f";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-lightest {
+  background-color: #cfc9c5;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-lightest::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-lightest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lightest";
+}
+.swatch._secondary ._tone-lightest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#cfc9c5";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-lighter {
+  background-color: #b6ada9;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-lighter::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-lighter::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lighter";
+}
+.swatch._secondary ._tone-lighter::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#b6ada9";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-light {
+  background-color: #9e928c;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-light::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-light::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "light";
+}
+.swatch._secondary ._tone-light::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#9e928c";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-base {
+  background-color: #86776f;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-base::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "base";
+}
+.swatch._secondary ._tone-base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#86776f";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-dark {
+  background-color: #6b5f59;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-dark::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-dark::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "dark";
+}
+.swatch._secondary ._tone-dark::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#6b5f59";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-darker {
+  background-color: #504743;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-darker::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-darker::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darker";
+}
+.swatch._secondary ._tone-darker::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#504743";
+  text-transform: uppercase;
+}
+.swatch._secondary ._tone-darkest {
+  background-color: #36302c;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._secondary ._tone-darkest::after {
+  font-size: 0.83333rem;
+}
+.swatch._secondary ._tone-darkest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darkest";
+}
+.swatch._secondary ._tone-darkest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#36302c";
+  text-transform: uppercase;
+}
+
+.swatch._blue .swatch__base {
+  background-color: #57a7b3;
+  color: #646464;
+  position: relative;
+  font-size: 1.728rem;
+  text-transform: uppercase;
+}
+.swatch._blue .swatch__base::after {
+  font-size: 1.2rem;
+}
+.swatch._blue .swatch__base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "blue";
+}
+.swatch._blue .swatch__base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#57a7b3";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-lightest {
+  background-color: #bcdce1;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-lightest::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-lightest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lightest";
+}
+.swatch._blue ._tone-lightest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#bcdce1";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-lighter {
+  background-color: #9acad1;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-lighter::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-lighter::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lighter";
+}
+.swatch._blue ._tone-lighter::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#9acad1";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-light {
+  background-color: #79b9c2;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-light::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-light::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "light";
+}
+.swatch._blue ._tone-light::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#79b9c2";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-base {
+  background-color: #57a7b3;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-base::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "base";
+}
+.swatch._blue ._tone-base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#57a7b3";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-dark {
+  background-color: #46868f;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-dark::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-dark::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "dark";
+}
+.swatch._blue ._tone-dark::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#46868f";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-darker {
+  background-color: #34646b;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-darker::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-darker::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darker";
+}
+.swatch._blue ._tone-darker::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#34646b";
+  text-transform: uppercase;
+}
+.swatch._blue ._tone-darkest {
+  background-color: #234348;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._blue ._tone-darkest::after {
+  font-size: 0.83333rem;
+}
+.swatch._blue ._tone-darkest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darkest";
+}
+.swatch._blue ._tone-darkest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#234348";
+  text-transform: uppercase;
+}
+
+.swatch._mono .swatch__base {
+  background-color: #fafafa;
+  color: #646464;
+  position: relative;
+  font-size: 1.728rem;
+  text-transform: uppercase;
+}
+.swatch._mono .swatch__base::after {
+  font-size: 1.2rem;
+}
+.swatch._mono .swatch__base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "mono";
+}
+.swatch._mono .swatch__base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#fafafa";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-lightest {
+  background-color: #ffffff;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-lightest::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-lightest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lightest";
+}
+.swatch._mono ._tone-lightest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#ffffff";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-lighter {
+  background-color: #fcfcfc;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-lighter::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-lighter::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "lighter";
+}
+.swatch._mono ._tone-lighter::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#fcfcfc";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-light {
+  background-color: #fbfbfb;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-light::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-light::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "light";
+}
+.swatch._mono ._tone-light::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#fbfbfb";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-base {
+  background-color: #fafafa;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-base::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-base::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "base";
+}
+.swatch._mono ._tone-base::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#fafafa";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-dark {
+  background-color: #c8c8c8;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-dark::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-dark::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "dark";
+}
+.swatch._mono ._tone-dark::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#c8c8c8";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-darker {
+  background-color: #969696;
+  color: #646464;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-darker::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-darker::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darker";
+}
+.swatch._mono ._tone-darker::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#969696";
+  text-transform: uppercase;
+}
+.swatch._mono ._tone-darkest {
+  background-color: #646464;
+  color: #ffffff;
+  position: relative;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.swatch._mono ._tone-darkest::after {
+  font-size: 0.83333rem;
+}
+.swatch._mono ._tone-darkest::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "darkest";
+}
+.swatch._mono ._tone-darkest::after {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  content: "#646464";
+  text-transform: uppercase;
+}

@@ -1,0 +1,81 @@
+.nav-links,
+.pager {
+    padding-left : 0;
+    margin-top   : $spacer-y;
+    margin-bottom: $spacer-y;
+    text-align   : center;
+    list-style   : none;
+    @include clearfix();
+	@include transition(all .2s ease-in-out);
+    // .nav-next {
+    //     text-align: right;
+	//     float: right;
+    // }
+    // .nav-previous {
+    //     text-align: left;
+	//     float: left;
+    // }
+    .nav-next,
+    .nav-previous {
+        display: inline-block;
+        // width  : 50%;
+        > a,
+        > span {
+            color           : $body-color-inverse;
+            display         : inline-block;
+            padding         : 5px 14px;
+            background-color: $brand-primary;
+            border          : $pager-border-width solid darken($brand-primary, 5%);
+            border-radius   : 2px;
+        }
+        > a {
+            @include hover-focus {
+                text-decoration : none;
+                background-color: darken($brand-primary, 10%);
+            }
+        }
+    }
+    li {
+        display: inline;
+        > a,
+        > span {
+            display         : inline-block;
+            padding         : 5px 14px;
+            background-color: $pager-bg;
+            border          : $pager-border-width solid $pager-border-color;
+            border-radius   : $pager-border-radius;
+        }
+        > a {
+            @include hover-focus {
+                text-decoration : none;
+                background-color: $pager-hover-bg;
+            }
+        }
+    }
+    .disabled {
+        > a {
+            @include plain-hover-focus {
+                color           : $pager-disabled-color;
+                cursor          : $cursor-disabled;
+                background-color: $pager-bg;
+            }
+        }
+        > span {
+            color           : $pager-disabled-color;
+            cursor          : $cursor-disabled;
+            background-color: $pager-bg;
+        }
+    }
+}
+.pager-next {
+    > a,
+    > span {
+        float: right;
+    }
+}
+.pager-prev {
+    > a,
+    > span {
+        float: left;
+    }
+}

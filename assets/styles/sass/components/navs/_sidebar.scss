@@ -1,0 +1,29 @@
+.sidebar {
+    position: fixed;
+    height: 100%;
+    background-color: $white;
+    border-left: 1px solid $border-color-dark;
+    &.account {
+        width: 350px;
+        right: -1rem;
+        &.fold {
+            right: -350px;
+        }
+    }
+    .sidebar_content {
+        padding: 10px;
+        #loginform,
+        #form_register,
+        .nav-tabs,
+        .tab-content {
+            width: 330px;
+            max-width: 330px;
+        }
+    }
+    .sidebar_close_icon {
+        width: 24px;
+        height: 24px;
+        fill: $brand-primary;
+    }
+
+}

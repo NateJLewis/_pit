@@ -1,0 +1,10 @@
+// WebKit-style focus
+
+@mixin tab-focus() {
+  // Default
+  outline: none !important;
+  // WebKit
+  // outline: 0 auto -webkit-focus-ring-color;
+  // border: none;
+  outline-offset: 0;
+}

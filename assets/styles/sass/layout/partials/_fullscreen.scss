@@ -1,0 +1,121 @@
+.fullscreen {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    &.active {
+        .fullscreen-wrap {
+            top: 0;
+            z-index: $zindex-panel;
+        }
+    }
+}
+.fullscreen-wrap {
+	position: fixed;
+	height: 100%;
+	z-index: 1;
+    left: 0;
+    right: 0;
+    top: -100%;
+    transition: top 0.5s;
+    &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 1;
+        background-color: $brand-primary;
+    }
+}
+.fullscreen-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.fullscreen-subcontent {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    a,
+    input,
+    .btn {
+        text-align: center;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        color: $body-color-inverse;
+        font-size: 2.25rem;
+        line-height: 1.6;
+    }
+    input:not(.btn),
+    textarea,
+    select {
+        font-size: 1.45rem;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $offwhite_lighter;
+        box-shadow: none !important;
+        background-color: transparent;
+        color: $body-color-inverse;
+        margin-bottom: 1.5rem;
+        &:focus {
+            transition: background 0.5s;
+            border: none;
+            box-shadow: none !important;
+            background-color: transparent;
+            outline: none;
+            color: $body-color-inverse;
+        }
+        &::-webkit-input-placeholder {
+            color: $offwhite_lighter;
+        }
+        &::-moz-placeholder {
+            color: $offwhite_lighter;
+        }
+        &:-ms-input-placeholder {
+            color: $offwhite_lighter;
+        }
+        &::placeholder {
+            color: $offwhite_lighter;
+        }
+    }
+    &.for_submit {
+        display: none;
+    }
+}
+
+.fullscreen-close {
+    left: auto;
+    width: 50px;
+    right: 25px;
+    top: 25px;
+    z-index: $zindex-panel;
+    position: absolute;
+}
+
+@media only screen and (min-width: 992px) {
+    .fullscreen-subcontent {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+        a,
+        input:not(.btn),
+        input.btn,
+        textarea,
+        select {
+            width: 85%;
+            font-size: 2.25rem;
+        }
+    }
+    .fullscreen-close {
+        width: 100px;
+        right: 50px;
+        top: 50px;
+    }
+}

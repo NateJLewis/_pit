@@ -1,0 +1,76 @@
+.site-footer {
+	.btn-link  {
+    	color: $offwhite-light !important;
+		&:hover {
+		    color: darken($offwhite-light, 5%) !important;
+		}
+	}
+	.contact_us_heading {
+    	color: $offwhite-light !important;
+	}
+	.social_list_group {
+		.btn-social {
+			color: $body-color-inverse !important;
+		}
+	}
+	.social_list_group,
+	.affiliate_list_group,
+	.contact_us_form {
+		max-width: 304px;
+		margin: 0.5rem auto;
+	}
+}
+#contact-us {
+	.social_list_group {
+		.btn-social {
+			color: $body-color-inverse !important;
+			padding: .6rem 1rem .6rem 3.6rem;
+		}
+	}
+	.social_list_group,
+	.affiliate_list_group {
+		max-width: 275px;
+		margin: 0.5rem auto;
+	}
+	a.list-group-item.formidable_affiliate_link img {
+	    width: 234px;
+	    height: 60px;
+	    margin: 0 auto;
+	}
+	a.list-group-item.studiopress_affiliate_link img {
+	    width: 260px;
+	    height: 125px;
+	    margin: 0 auto;
+	}
+	a.list-group-item.formidable_affiliate_link,
+	a.list-group-item.studiopress_affiliate_link {
+	    padding: .5rem 0;
+		opacity: .8;
+	}
+}
+
+#colophon.site-footer {
+    min-height: 20vh;
+}
+
+@media only screen and (min-width: 480px) {
+	#colophon.site-footer {
+	    min-height: 20vh;
+	}
+}
+@media only screen and (min-width: 768px) {
+	#colophon.site-footer {
+		min-height: 15vh;
+	}
+}
+@media only screen and (min-width: 992px) {
+	#colophon.site-footer {
+		min-height: 15vh;
+	}
+}
+#colophon #contact-us .form-control-lg,
+#colophon #contact-us .btn-lg {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+	border-radius: 0;
+}

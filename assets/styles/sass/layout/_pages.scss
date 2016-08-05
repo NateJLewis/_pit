@@ -1,0 +1,18 @@
+.byline,
+.updated:not(.published){
+	display: none;
+}
+.excerpt_more_icon.material-icons {
+    vertical-align: text-bottom;
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    margin-left: .25rem;
+}
+
+
+@import "pages/projects";
+@import "pages/products";
+@import "pages/tutorials";
+@import "pages/snippets";
+@import "pages/home";
